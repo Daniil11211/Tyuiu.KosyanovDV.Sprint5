@@ -15,7 +15,7 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task1.V9.Lib
             
             for (double x = startValue; x <= stopValue; x++)
             {
-                double result = Math.Sin(x) + ((Math.Cos(x))/2) - 1.5 * x;
+                double result = Math.Sin(x) + ((Math.Cos(2*x))/2) - 1.5 * x;
                 if (double.IsInfinity(result) || double.IsNaN(result))
                 {
                     result = 0;
