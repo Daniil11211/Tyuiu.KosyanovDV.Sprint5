@@ -21,7 +21,7 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task1.V9.Lib
                     result = 0;
                 }
                 result = Math.Round(result, 2);
-                File.AppendAllText("OutPutFileTask1.txt", $"{result}");
+                File.AppendAllText(path, $"{result}");
                 Console.WriteLine($"{result}\n");
             }
             return path;
