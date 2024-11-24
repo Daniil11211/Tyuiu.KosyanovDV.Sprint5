@@ -21,7 +21,7 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task1.V9.Lib
                     result = 0;
                 }
                 result = Math.Round(result, 2);
-                File.AppendAllText(path, $"{result}");
+                File.AppendAllText(path, $"{result}\n");
                 Console.Write($"{result}\n");
             }
             return path;
