@@ -7,7 +7,7 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task3.V4.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask2.cvs");
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask3.bin");
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExist = fileInfo.Exists;
