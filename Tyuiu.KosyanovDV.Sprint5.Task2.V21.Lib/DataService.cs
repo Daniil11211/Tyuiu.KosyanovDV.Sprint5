@@ -33,7 +33,7 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task2.V21.Lib
             {
                 for (int j = 0; j < columns; j++) 
                 {
-                    if (j != columns)
+                    if (j != columns - 1)
                     {
                         str = str + matrix[i, j] + ";";
                     }
