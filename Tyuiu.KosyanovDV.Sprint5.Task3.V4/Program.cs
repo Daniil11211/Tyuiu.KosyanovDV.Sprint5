@@ -32,7 +32,8 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task3.V4
             Console.WriteLine("*****************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                    *");
             Console.WriteLine("*****************************************************************");
-            Console.WriteLine($"* {ds.SaveToFileTextData(x)} ");
+            Console.WriteLine($"* Файл: {ds.SaveToFileTextData(x)} ");
+            Console.WriteLine($"* Создан!                                                      *");
             Console.WriteLine("*****************************************************************");
             Console.ReadKey();
 

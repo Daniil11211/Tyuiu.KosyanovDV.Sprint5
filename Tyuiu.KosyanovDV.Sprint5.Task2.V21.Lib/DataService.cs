@@ -6,7 +6,7 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task2.V21.Lib
     {
         public string SaveToFileTextData(int[,] matrix)
         {
-            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask2.cvs");
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask2.txt");
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExist = fileInfo.Exists;

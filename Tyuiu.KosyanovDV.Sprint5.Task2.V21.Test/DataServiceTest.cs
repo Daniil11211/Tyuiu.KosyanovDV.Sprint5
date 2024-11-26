@@ -6,7 +6,7 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task2.V21.Test
         [TestMethod]
         public void CheckFile()
         {
-            string path = @"C:\Users\kosya\AppData\Local\Temp\OutPutFileTask2.csv";
+            string path = @"C:\Users\kosya\AppData\Local\Temp\OutPutFileTask2.txt";
 
             FileInfo file = new FileInfo(path);
             bool fileExists = file.Exists;
