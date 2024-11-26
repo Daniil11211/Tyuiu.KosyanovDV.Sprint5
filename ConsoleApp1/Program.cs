@@ -1,11 +1,7 @@
-﻿double start = 10, end = 12, step = 1;
-for (double x = start; x <= end; x += step)
+﻿int[,] array = { { -5, 11, -4 }, { 1, 2, -4 }, { 4, 8, 3 } };
+int rowsum = 1;
+for (int j = 0; j < array.GetLength(1); j++)
 {
-    double result = 2 * x + 3 * Math.Pow(x, 2) - 94;
-    if (double.IsInfinity(result) || double.IsNaN(result))
-    {
-        result = 0;
-    }
-    result = Math.Round(result, 2);
-    Console.WriteLine($"{result}\n");
+    rowsum *= array[0, j];
 }
+Console.WriteLine(rowsum.ToString());
