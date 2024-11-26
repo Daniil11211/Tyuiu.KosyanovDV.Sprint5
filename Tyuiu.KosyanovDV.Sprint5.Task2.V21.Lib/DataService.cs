@@ -35,11 +35,11 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task2.V21.Lib
                 {
                     if (j != columns)
                     {
-                        str += matrix[i, j] + ";";
+                        str = str + matrix[i, j] + ";";
                     }
                     else
                     {
-                        str += matrix[i, j];
+                        str = str + matrix[i, j];
                     }
                 }
 
@@ -54,7 +54,7 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task2.V21.Lib
 
                 str = "";
             }
-
+            
             return path;
         }
     }
