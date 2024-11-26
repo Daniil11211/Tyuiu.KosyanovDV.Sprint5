@@ -18,12 +18,10 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task3.V4.Lib
 
             using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.Unicode))
             {
-                writer.Write(res);
+                writer.Write(BitConverter.GetBytes(res));
             }
 
-            string result = Convert.ToString(res);
-
-            return result;
+            return path;
         }
     }
 }
