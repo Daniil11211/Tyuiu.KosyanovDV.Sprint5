@@ -16,7 +16,7 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task3.V4.Lib
 
             double res = Math.Round(Math.Log((x + 1) / (double)(x + 2)), 2);
 
-            using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8))
+            using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.Unicode))
             {
                 writer.Write(BitConverter.GetBytes(res));
             }
