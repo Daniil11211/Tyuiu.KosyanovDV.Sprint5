@@ -14,14 +14,18 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task3.V4.Lib
 
             if (fileExist) { File.Delete(path); }
 
-            double res = Math.Round(Math.Log((double)(x + 1) / (double)(x + 2)), 2);
+            double res = Math.Round(Math.Log((double)(x + 1) / (double)(x + 2)), 3);
 
             using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.Unicode))
             {
-                writer.Write(BitConverter.GetBytes(res));
+                writer.Write(res);
             }
 
-            return path;
+            string result = Convert.ToString(res);
+
+            File.AppendAllText(path, result);
+
+            return result;
         }
     }
 }
