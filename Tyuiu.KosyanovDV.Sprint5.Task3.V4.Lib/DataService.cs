@@ -23,8 +23,6 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task3.V4.Lib
 
             string result = Convert.ToString(res);
 
-            File.AppendAllText(path, result);
-
             return result;
         }
     }
