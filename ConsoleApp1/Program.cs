@@ -1,7 +1,3 @@
-﻿int[,] array = { { -5, 11, -4 }, { 1, 2, -4 }, { 4, 8, 3 } };
-int rowsum = 1;
-for (int j = 0; j < array.GetLength(1); j++)
-{
-    rowsum *= array[0, j];
-}
-Console.WriteLine(rowsum.ToString());
+﻿int x = 3;
+double y = Math.Round(Math.Log((x + 1) / (double)(x + 2)), 2); // обрати внимание на приведение к double
+Console.WriteLine(y);

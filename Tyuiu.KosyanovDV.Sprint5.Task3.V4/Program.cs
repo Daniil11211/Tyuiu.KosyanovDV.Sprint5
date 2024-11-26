@@ -27,6 +27,8 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task3.V4
 
             int x = 3;
 
+            var res = ds.SaveToFileTextData(x);
+
             Console.WriteLine("*****************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                    *");
             Console.WriteLine("*****************************************************************");
