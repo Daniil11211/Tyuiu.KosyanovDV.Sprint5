@@ -24,15 +24,13 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task4.V15
             Console.WriteLine("*               x                                               *");
             Console.WriteLine("* y = sin(x) + ----                                             *");
             Console.WriteLine("*               2                                               *");
-            Console.WriteLine("*****************************************************************");
 
             string path = @"C:\DataSprint5\InPutDataFileTask4V15.txt";
 
             Console.WriteLine("*****************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                    *");
             Console.WriteLine("*****************************************************************");
-            Console.WriteLine($"* Файл: {ds.LoadFromDataFile(path)} ");
-            Console.WriteLine($"* Создан!                                                       *");
+            Console.WriteLine($"* {ds.LoadFromDataFile(path)} ");
             Console.WriteLine("*****************************************************************");
             Console.ReadKey();
 

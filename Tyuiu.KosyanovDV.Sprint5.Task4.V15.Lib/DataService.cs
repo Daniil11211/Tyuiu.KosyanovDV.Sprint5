@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint5;
+﻿using System.Globalization;
+using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.KosyanovDV.Sprint5.Task4.V15.Lib
 {
@@ -7,7 +8,16 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task4.V15.Lib
         public double LoadFromDataFile(string path)
         {
             string read = File.ReadAllText(path);
-            double res = Math.Round((Math.Sin(Convert.ToDouble(read)) + ((Math.Pow(Convert.ToDouble(read), 2)) / (2))), 3);
+            double res; 
+            if (double.TryParse(read, NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture, out double parsedValue))
+            {
+                res = Math.Round((Math.Sin(parsedValue) + ((Math.Pow(parsedValue, 2)) / 2)), 3);
+            }
+            else
+            {
+                throw new FormatException("Ввод данных из файла имеет неверный формат.");
+            }
+
             return res;
         }
     }

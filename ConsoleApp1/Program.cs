@@ -1,2 +1,1 @@
-﻿string read = Convert.ToDouble(File.ReadAllText(@"C:\DataSprint5\InPutDataFileTask4V15.txt"));
-double res = Math.Round((Math.Sin(Convert.ToDouble(read)) + ((Math.Pow(Convert.ToDouble(read), 2)) / (2))), 3);
+﻿
