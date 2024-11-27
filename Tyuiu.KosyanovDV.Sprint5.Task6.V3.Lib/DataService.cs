@@ -12,9 +12,9 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task6.V3.Lib
 
             int count = 0;
 
-            foreach (char c in alphabet)
+            foreach (char c in text)
             {
-                if (text.Contains(c))
+                if (alphabet.Contains(c))
                 {
                     count++;
                 }
