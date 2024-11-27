@@ -1,12 +1,11 @@
-﻿string text = File.ReadAllText(@"C:\DataSprint5\InPutDataFileTask5V0.txt");
-string[] strings = text.Split(',');
-List<string> result = new List<string>();
-foreach (string str in strings)
+﻿string text = "123 Привет, это тестовая строка 456.";
+
+foreach (char c in text)
 {
-    if (int.TryParse(str.Trim(), out int number) && number % 5 == 0)
+    if (char.IsDigit(c))
     {
-        result.Add(str);
+        text = text.Replace(c, '#');
     }
 }
-File.WriteAllLines(@"C:\DataSprint5\InPutDataFileTask5V0.txt", result);
-Console.WriteLine(String.Join("\n", result));
+
+Console.WriteLine(text);

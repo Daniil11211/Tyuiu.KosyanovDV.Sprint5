@@ -18,5 +18,16 @@ namespace Tyuiu.KosyanovDV.Sprint5.Task6.V3.Test
 
             Assert.AreEqual(wait, res);
         }
+
+        [TestMethod]
+        public void CheckFile()
+        {
+            string path = @"C:\DataSprint5\InPutDataFileTask6V3.txt";
+
+            FileInfo file = new FileInfo(path);
+            bool fileExists = file.Exists;
+            bool wait = true;
+            Assert.AreEqual(wait, fileExists);
+        }
     }
 }
